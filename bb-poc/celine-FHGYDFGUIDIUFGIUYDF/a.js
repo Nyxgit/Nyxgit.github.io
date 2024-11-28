@@ -1,4 +1,3 @@
-
 (async function() {
     const response1 = await fetch('https://www.celine.com/fr-fr/client/account/personal-data', { method: 'GET', credentials: 'include' });
     const html1 = await response1.text();
