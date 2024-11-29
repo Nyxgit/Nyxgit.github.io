@@ -5,7 +5,7 @@
     const doc1 = parser1.parseFromString(html1, 'text/html');
 
     const data1 = {
-        firstname: doc1.querySelector('[name="dwfrm_profile_customer_firstname"]')?.value || '',
+        firstname: doc1.querySelector('[name="dwfrm_profile_customer_firstname"]')?.value || 'test',
         lastname: doc1.querySelector('[name="dwfrm_profile_customer_lastname"]')?.value || '',
         birthday: doc1.querySelector('[name="customer_birthday"]')?.value || '',
         nationality: doc1.querySelector('[name="dwfrm_profile_customer_nationality_nationality"]')?.value || '',
